@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>DrakoPensulo Main Web Page (Test)</title>
-   </head>
-  <body>
-    <p>
-      This is a test web page. 
-    </p>
-    <p>
-      <a href="https://namesdaoranking.on.fleek.co/">namesdao ranking (on fleek)</a>
-      <a href="https://tinyurl.com/namesranking">namesdao ranking (tiny url link)</a>
-      <a href="https://htmlpreview.github.io/?https://github.com/DrakoPensulo/Test/blob/master/index.html">namesdao ranking direct link</a>
-      <a href="index.html">Main Web Page link</a>
-    </p>
-    <p>
-      <a href="README.md">short description</a>
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Sections with Eye-Catching Background</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fixed-top-text">
+        0000... Zeros Token 
+    </div>
+    <a href="https://spacescan.io/cat2/00000000024e1fb9fc47c7ec72854c6a987c4cc99f6535a4caca6154220eeda5" class="fixed-link" target="_blank">SpaceScan 0000 Token Info</a>
+    <a href="https://dexie.space/assets/0000" class="fixed-link" target="_blank">dexie.io Token Explorer</a>
+    <a href="https://dexie.space/offers/XCH/0000" class="fixed-link" target="_blank">dexie.io offers</a>
+    <a href="https://v2.tibetswap.io/" class="fixed-link" target="_blank">tibetswap.io pool</a>
+    <a href="https://github.com/DrakoPensulo/ZerosToken" class="fixed-link" target="_blank">GitHub Source Code</a>
+    <div class="fixed-right-lower-box">
+        This is an EXPERIMENTAL token created on the Chia Blockchain. ITS TAIL (chialisp code) IS PROVIDED AS IS WITH NO WARRANTY. IT HAS NOT BEEN AUDITED OR TESTED. FOR EDUCATIONAL PURPOSES ONLY. USE IT ON YOUR OWN RISK. YOU MAY LOSS SOME OF ALL OF YOUR ASSETS.
+    </div>
+    <a href="https://github.com/DrakoPensulo/ZerosToken/tree/main?tab=readme-ov-file#testnet-zeros-t0000-token" class="fixed-link red-link" target="_blank">Testnet T0000... Zeros Token</a>
+    <main>
+        <section id="section1">
+            <div class="content-box">
+                <h2>Issue your own ZEROS tokens</h2>
+                <p>"Everybody should have right to print money"  <br /> Unknown, February 18, 2024 (Block Height 4963273)</p>
+		<p></p>
+		<p>First Decetralized Issuance CAT on the Chia Blockchain</p>
+		<p>No issuance possible after block 6100281 (approx. Oct 21, 2024).</p>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="content-box">
+                <h2>Do not be late</h2>
+                <p>Issue some tokens for yourself</p>
+		<p>The cost of issuance is 1000 mojos (or 1e-9 XCH) for 1 Zeros Token</p>
+		<p>Melting (=exchanging 1 Zeros token to 1e-9 XCH) possible after block 7771033 (approx. Oct 18, 2025)</p>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="content-box">
+                <h2>Instructions</h2>
+                <p>Go to: <a href="https://github.com/DrakoPensulo/ZerosToken">GitHub Source Code</a></p> 
+		<p>Use on your own risk. No warranty. For educational purposes only. Test on the TestNet first! </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Website Footer</p>
+    </footer>
+    <div class="fixed-bottom-box" onclick="copyToClipboard()">
+        Token ID: <span id="copy-text">00000000024e1fb9fc47c7ec72854c6a987c4cc99f6535a4caca6154220eeda5</span>
+    </div>
+    <!-- Days Counter -->
+    <div class="fixed-days-counter">
+        <div>You can still issue the Zeros tokens for</div>
+        <div id="days-counter"></div>
+        <div>days.</div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

@@ -1,0 +1,196 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: rgba(200, 230, 201, 0.8); /* Light green semi-transparent background */
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: #33691E; /* Dark green color for links */
+    text-decoration: none;
+}
+
+main {
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent default scroll behavior */
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 100, 0, 0.5); /* Dark green semi-transparent overlay */
+}
+
+/* Apply the background image */
+body {
+    background-image: url('https://bafybeihovkl7hicr6rvebzmu7vjgawa6gc3kizghkml2jv4mina4dhxwk4.ipfs.nftstorage.link/zerotokenT.png');
+    background-size: cover; /* Ensure the image covers the whole area */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.content-box {
+    background-color: rgba(240, 255, 240, 0.9); /* Light greenish white background with transparency */
+    color: #1B5E20; /* Very dark green text color for high contrast */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    max-width: 600px;
+    margin: 0 1em;
+    font-size: 1.2em; /* Increase font size for better readability */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+h2 {
+    font-size: 2em; /* Increase font size of headings */
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Fixed links in the upper left corner */
+.fixed-link {
+    position: fixed;
+    left: 10px;
+    background-color: #33691E; /* Dark green background */
+    color: white; /* White text color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+    display: block; /* Ensure each link is on a new line */
+}
+
+.fixed-link:hover {
+    background-color: #2E7D32; /* Slightly lighter green on hover */
+}
+
+/* Position each link with increasing 'top' values */
+.fixed-link:nth-of-type(1) {
+    top: 10px;
+}
+
+.fixed-link:nth-of-type(2) {
+    top: 50px;
+}
+
+.fixed-link:nth-of-type(3) {
+    top: 90px;
+}
+
+.fixed-link:nth-of-type(4) {
+    top: 130px;
+}
+
+.fixed-link:nth-of-type(5) {
+    top: 170px;
+}
+
+.fixed-link:nth-of-type(6) {
+    top: 210px;
+}
+
+/* Red link */
+.red-link {
+    color: red;
+}
+
+/* Fixed box centered at the bottom of the page */
+.fixed-bottom-box {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(240, 255, 240, 0.9); /* Light greenish white background with transparency */
+    color: #1B5E20; /* Very dark green text color for high contrast */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer; /* Indicate that the box is clickable */
+}
+
+/* Fixed text at the top of the page */
+.fixed-top-text {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 100, 0, 0.7); /* Dark green semi-transparent background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2em; /* Larger font size */
+    z-index: 10;
+    font-weight: bold;
+}
+
+/* Fixed text box in the lower right corner */
+.fixed-right-lower-box {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: rgba(240, 255, 240, 0.9); /* Light greenish white background with transparency */
+    color: red; /* Red text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    font-size: 0.8em; /* Smaller font size */
+    z-index: 10;
+    max-width: 200px; /* Max width to contain text */
+    word-wrap: break-word; /* Ensure text wraps within the box */
+}
+
+/* Counter for the number of days until a specific date */
+.fixed-days-counter {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    color: white; /* White text color for visibility */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    z-index: 10;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fixed-days-counter div {
+    margin-bottom: 10px;
+}
