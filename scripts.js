@@ -50,7 +50,7 @@ function calculateDaysUntil(targetDate) {
 }
 
 function updateDaysCounter() {
-    const targetDate = new Date('October 21, 2024');
+    const targetDate = new Date('October 18, 2025');
     const daysCounterElement = document.getElementById('days-counter');
     const daysUntil = calculateDaysUntil(targetDate);
     daysCounterElement.textContent = daysUntil;
